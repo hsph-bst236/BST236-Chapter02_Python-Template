@@ -67,6 +67,12 @@ env.bak/
 venv.bak/
 .python-version
 
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # Poetry specific
 poetry.lock
 .pdm.toml
