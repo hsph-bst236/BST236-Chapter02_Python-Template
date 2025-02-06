@@ -1,0 +1,29 @@
+base:
+  path:
+    raw_data: raw_data/
+    data: data/
+    models: model/
+    output: output/
+  params:
+    random_seed: 42
+
+data:
+  raw_data: raw_data/data.csv
+  processed_data: data/boston.csv
+
+model:
+  type: "random_forest"
+  parameters:
+    n_estimators: 100
+    max_depth: 10
+  test_size: 0.2
+  scoring: "roc_auc"
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "default"
+
+visualization:
+  style: "whitegrid"
+  figure_size: [10, 6]
+  font_size: 12 
