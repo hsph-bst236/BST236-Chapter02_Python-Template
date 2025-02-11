@@ -4,21 +4,20 @@
 .RData
 .Ruserdata
 *.Rproj
+renv/
+
+
+
 
 
 # data
  raw_data/*
-# data/*
 
 
 # Generated data and results
 # figs/*
 
 # Output files
-# src/R/output/*	
-*.html
-*.pdf
-*.docx
 *.log
 *.aux
 *.out
@@ -73,9 +72,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Poetry specific
-poetry.lock
-.pdm.toml
 
 # Conda specific
 conda-meta/

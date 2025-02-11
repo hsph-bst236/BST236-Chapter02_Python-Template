@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from utils.path_demo import get_data_path_from_root, get_data_path
 
 def process_boston_data():
     # Define column names from the header
